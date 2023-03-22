@@ -1,0 +1,150 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: content-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: white;
+}
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #6f6f6f;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #ffffff;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+#main {
+    background: rgba(105, 105, 105, 0.253);
+    margin: 2% 20%;
+    text-align: center;
+    border-radius: 5%;
+    word-spacing: 1%;
+    padding: 2% 0%;
+}
+
+#login {
+    text-transform: uppercase;
+    padding: 1% 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    height: 10rem;
+    margin: 1% 0%;
+}
+
+#legend {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    margin: 1% 0%;
+    padding-bottom: 2%;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(28, 28, 28, 0.767);
+    padding: 0.5% 0%;
+}
+
+form input {
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(103, 100, 100);
+    border: 0px;
+    padding: 3px 5px;
+}
+
+#button {
+    font-size: 14px;
+    padding:1% 6%;
+    margin:2%;
+    border-radius: 10px;
+    border: 0px solid transparent;
+    background: rgb(170, 170, 170);
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+#button:hover {
+    border: 2px solid rgb(101, 101, 101);
+    transition: ease-in-out 1s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+a:hover {
+    color: blue;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="./Styles/IMG/styles.css">
+</head>
+<body id="body">
+    <div id="container">
+        <div id="fluid_container">
+            <!-- Rounded switch -->
+            <label class="switch">
+                <input id="dark" type="checkbox" ondblclick="shown()" onclick="show()">
+                <span class="slider round"></span>
+            </label>
+            <div id="main">
+                <h1 id="login">Login</h1>
+                <img src="./Styles/IMG/2022_07_01_10_40_IMG_5485.PNG" alt="">
+                <legend id="legend">Please fill in your information!</legend>
+                <form action="#">
+                    <label for="username" id="username">Username*</label></br>
+                    <input type="text" name="username" id="username" placeholder="John Doe" minlength="8" maxlength="15" required></br>
+                    <label for="password" id="password">password*</label></br>
+                    <input type="password" name="username" id="password" placeholder="**********" minlength="6" maxlength="15" required></br>
+                    <button id="button" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-unlock" viewBox="0 0 16 16">
+                            <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2zM3 8a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H3z"/>
+                          </svg>
+                    </button>
+                </form>
+            <a id="forgotten" href="#">Forgotten Password?</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+</html>
